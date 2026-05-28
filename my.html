@@ -1,84 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
-    <title>Eshu shakya Portfolio</title>
-    <link rel="stylesheet" href="my.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eshu Shakya Portfolio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="my.css" />
 </head>
 <body>
     <nav>
         <div class="nav-container">
             <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-                <span>Eshu shakya</span>
+                <span>Eshu Shakya</span>
             </div>
+
             <div class="links">
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="http://127.0.0.1:5500/Untitled-1.html#">Home</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="http://127.0.0.1:5500/Untitled-1.html#">About</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="http://127.0.0.1:5500/Untitled-1.html#">Skills</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#">Services</a></div>
-                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#">Blogs</a></div>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="http://127.0.0.1:5500/contact.html">Contact Us</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#blogs">Blogs</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="contact.html">Contact Us</a></div>
             </div>
-            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()" aria-label="Open menu"></i>
         </div>
+
         <div class="dropdown">
             <div class="links">
-                <a href="http://127.0.0.1:5500/Untitled-1.html#">Home</a>
-                <a href="http://127.0.0.1:5500/Untitled-1.html#">About</a>
-                <a href="http://127.0.0.1:5500/Untitled-1.html#">Skills</a>
-                <a href="#">Services</a>
-                <a href="#">Blogs</a>
-                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-    <a href="http://127.0.0.1:5500/contact.html">Contact Us</a>
-</div>
-
-                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Services</a>
+                <a href="#blogs">Blogs</a>
+                <a href="contact.html">Contact Us</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()" aria-label="Close menu"></i>
             </div>
         </div>
     </nav>
-        <section>
-            <div class="main-container">
-                <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-                    <img src="same.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">Hey I'm <span>Eshu shakya</span></h1>
-                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">I'm a <span></span></div>
-                    <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, perferendis quas consectetur possimus maxime consequatur cupiditate eos dolorum molestias praesentium error exercitationem rem labore illo, in dolor, odio corporis excepturi?</p>
-                    <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
-                        <a href="https://github.com/dashboard"><i class="fa-brands fa-github"></i></a>
-                        <a href="https://www.facebook.com/eshu.shakya.xyz1" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/eshu-eshu-shakya-817b7b348/overlay/contact-info/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://x.com/Eshushakya18"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://www.instagram.com/eshu.shakya.xyz18?igsh=MWI1cGhldzE0YjV1aA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-                        <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
-    <a href="Eshu Resume2 (1).pdf" download>
-        <button>Download CV</button>
-    </a>
-</div>
 
-                    </div>
+    <section class="hero">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="same.jpg" alt="Eshu Shakya profile photo" />
+            </div>
+
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800">
+                    Hey I'm <span>Eshu Shakya</span>
+                </h1>
+
+                <div class="typewriter" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">
+                    I'm a <span id="changing-text"></span>
+                </div>
+
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+                    I am a passionate web developer who loves creating responsive, modern, and user-friendly websites.
+                    I enjoy building attractive frontend designs and improving my skills every day.
+                </p>
+
+                <div class="social-links" data-aos="flip-down" data-aos-duration="1000" data-aos-delay="1200">
+                    <a href="https://github.com/Eshukholi/My-profile/upload" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/share/1ZrRcsJWoN/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/eshu-eshu-shakya-817b7b348/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://x.com/Eshushakya18" target="_blank" rel="noopener noreferrer" aria-label="X">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/eshu.shakya.xyz18?igsh=MWI1cGhldzE0YjV1aA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="https://wa.me/8447696392 target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                    <a href="mailto:yourmail@example.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+
+                    <a href="https://youtube.com/@i_am-dost18?si=CBcQSgw2u6Prcj866" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="Eshu Resume2 (1).pdf" download>
+                        <button>Download CV</button>
+                    </a>
                 </div>
             </div>
-        </section>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({offset:0});
-        </script>
-        <script>
-            function hamburg(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(0px)"
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            offset: 0,
+            duration: 1000,
+            once: true
+        });
+
+        function hamburg() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(0)";
+        }
+
+        function cancel() {
+            const navbar = document.querySelector(".dropdown");
+            navbar.style.transform = "translateY(-500px)";
+        }
+
+        const texts = ["Web Developer", "Frontend Designer", "YouTuber", "Coder", "Gamer",];
+        let speed = 100;
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const changingText = document.getElementById("changing-text");
+
+        function typeEffect() {
+            const currentText = texts[textIndex];
+
+            if (!isDeleting) {
+                changingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+                if (charIndex === currentText.length) {
+                    isDeleting = true;
+                    setTimeout(typeEffect, 1000);
+                    return;
+                }
+            } else {
+                changingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+                if (charIndex === 0) {
+                    isDeleting = false;
+                    textIndex = (textIndex + 1) % texts.length;
+                }
             }
-            function cancel(){
-                const navbar = document.querySelector(".dropdown")
-                navbar.style.transform = "translateY(-500px)"
-            }
-        </script>
+
+            setTimeout(typeEffect, isDeleting ? 60 : speed);
+        }
+
+        typeEffect();
+    </script>
 </body>
 </html>
